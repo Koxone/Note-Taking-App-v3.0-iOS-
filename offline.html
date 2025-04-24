@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>KoxNotes - Sin conexión</title>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #232530;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      img {
+        max-width: 100px;
+        margin-bottom: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: rgba(255, 255, 255, 0.8);
+      }
+
+      button {
+        background-color: #525866;
+        color: white;
+        border: none;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-family: inherit;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="assets/images/Feather.png" alt="KoxNotes Logo" />
+    <h1>Sin conexión</h1>
+    <p>No tienes conexión a internet. Algunas funciones podrían no estar disponibles.</p>
+    <button onclick="window.location.reload()">Intentar de nuevo</button>
+
+    <script>
+      window.addEventListener('online', () => {
+        window.location.reload();
+      });
+    </script>
+  </body>
+</html>

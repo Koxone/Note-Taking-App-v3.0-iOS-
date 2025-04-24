@@ -1,0 +1,1 @@
+export let currentUserReset = localStorage.getItem('currentUserReset');
