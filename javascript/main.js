@@ -47,6 +47,4 @@ document.addEventListener('DOMContentLoaded', () => {
   registerSearchEvents();
   registerSettingsEvents();
   registerResetPasswordEvents();
-
-  // console.log('Aplicación inicializada para usuario:', getCurrentUser());
 });

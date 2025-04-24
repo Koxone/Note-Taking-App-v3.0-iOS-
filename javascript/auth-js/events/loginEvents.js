@@ -44,10 +44,6 @@ export function loginHandler() {
       currentUserArchivedNotes.length = 0;
 
       updateUserNotes();
-
-      // console.log('Login exitoso para usuario:', user);
-      // console.log('Notas cargadas:', currentUserNotes.length);
-
       showMainAppView();
 
       if (wrongMail) wrongMail.style.display = 'none';

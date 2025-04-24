@@ -420,6 +420,8 @@ export function settingsLogOutButton() {
 settingsLogOutButton();
 
 export function showMainAppView() {
+  document.getElementById('titleText').textContent = 'All Notes';
+  console.log('KOXONE WORKS')
   document.getElementById('loginContainer').style.display = 'none';
   document.getElementById('signUpContainer').style.display = 'none';
   document.getElementById('allArchivedNotesContainer').style.display = 'none';
