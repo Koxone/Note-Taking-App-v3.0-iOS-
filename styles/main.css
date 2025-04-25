@@ -1441,6 +1441,10 @@ form {
     align-items: center;
   }
 
+  .logoText {
+    font-size: 2.5rem;
+  }
+
   .labelsContainer {
     width: 99%;
   }
