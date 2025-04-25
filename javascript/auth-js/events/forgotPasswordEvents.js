@@ -55,37 +55,3 @@ export function registerForgotPasswordEvents() {
     });
   }
 }
-
-// function createGoBackButton() {
-//   const forgotPasswordContainer = document.getElementById('forgotPasswordContainer');
-//   if (!forgotPasswordContainer) return null;
-
-//   let backButton = forgotPasswordContainer.querySelector('.backToLogin');
-
-//   if (!backButton) {
-//     backButton = document.createElement('button');
-//     backButton.className = 'backToLogin mainButton';
-//     backButton.textContent = 'Back to Login';
-//     backButton.style.marginTop = '20px';
-
-//     const formContainer = forgotPasswordContainer.querySelector('.formContainer');
-//     if (formContainer) {
-//       formContainer.appendChild(backButton);
-//     }
-//   }
-
-//   backButton.addEventListener('click', (e) => {
-//     e.preventDefault();
-
-//     const forgotPasswordContainer = document.getElementById('forgotPasswordContainer');
-//     const loginContainer = document.getElementById('loginContainer');
-
-//     if (forgotPasswordContainer && loginContainer) {
-//       forgotPasswordContainer.style.display = 'none';
-//       loginContainer.style.display = 'flex';
-//       loginContainer.style.flexDirection = 'column';
-//     }
-//   });
-
-//   return backButton;
-// }

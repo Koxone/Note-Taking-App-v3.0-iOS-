@@ -43,6 +43,8 @@ export function loginHandler() {
       currentUserNotes.length = 0;
       currentUserArchivedNotes.length = 0;
 
+      document.getElementById('generalContainer').style.justifyContent = 'flex-start';
+
       updateUserNotes();
       showMainAppView();
 
@@ -51,9 +53,9 @@ export function loginHandler() {
       passwordInput.value = '';
 
       if (currentColorTheme !== 'lightMode') {
-        document.querySelector('.backgroundM').style.backgroundColor = '#0e1218';
+        document.querySelector('.mainContainer').style.backgroundColor = '#232530';
       } else {
-        document.querySelector('.backgroundM').style.backgroundColor = '#ffffff';
+        document.querySelector('.mainContainer').style.backgroundColor = '#ffffff';
       }
     });
   }

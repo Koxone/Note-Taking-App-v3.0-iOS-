@@ -144,6 +144,7 @@ textarea {
 .generalContainer {
   position: relative;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   width: 100%;
   flex: 1;

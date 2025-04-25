@@ -3,49 +3,6 @@ import { addError } from '../../auth-js/ui/authUI.js';
 import { getCurrentUser } from '../../state/session-state.js';
 import { showLoginScreen } from '../../events/navigationEvents.js';
 
-// //Function for Change Password Screen
-// export function changePassword() {
-//   const newPasswordInput = document.getElementById('newPassword');
-//   const confirmPasswordInput = document.getElementById('confirmNewPassword');
-//   const resetButton = document.getElementById('resetButtonReset');
-
-//   let newPassword = '';
-//   let confirmPassword = '';
-
-//   if (newPasswordInput) {
-//     newPasswordInput.addEventListener('input', (e) => {
-//       newPassword = e.target.value.trim();
-//     });
-//   }
-
-//   if (confirmPasswordInput) {
-//     confirmPasswordInput.addEventListener('input', (e) => {
-//       confirmPassword = e.target.value.trim();
-//     });
-//   }
-
-//   if (resetButton) {
-//     resetButton.addEventListener('click', () => {
-//       if (newPassword !== confirmPassword) {
-//         addError();
-//         console.log('Paswords do not match');
-//         return;
-//       }
-
-//       const result = updatePassword(newPassword);
-
-//       if (!result.success) {
-//         addError();
-//         console.log('User not found');
-//         return;
-//       }
-
-//       showLoginScreen();
-//     });
-//   }
-// }
-// changePassword();
-
 //Function for Go Back to Settings
 export function goBackToSettings() {
   const goBackToSettings = document.querySelector('.goBackToSettings');

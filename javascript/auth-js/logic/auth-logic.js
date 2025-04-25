@@ -47,30 +47,6 @@ export function loginUser(email, password) {
   return { success: true };
 }
 
-//Function
-// export function updatePassword(newPassword) {
-//   if (!newPassword || newPassword.trim() === '') {
-//     return { success: false, reason: 'empty_password' };
-//   }
-
-//   const cleanedPassword = newPassword.trim();
-//   const currentUser = JSON.parse(localStorage.getItem('currentUserReset') || localStorage.getItem('currentUser'));
-
-//   const credentials = JSON.parse(localStorage.getItem('Credentials')) || [];
-
-//   const userIndex = credentials.findIndex((user) => user.user === currentUser);
-//   if (userIndex === -1) {
-//     return { success: false, reason: 'user_not_found' };
-//   }
-
-//   const hashed = CryptoJS.SHA256(cleanedPassword).toString();
-//   credentials[userIndex].password = hashed;
-
-//   localStorage.setItem('Credentials', JSON.stringify(credentials));
-
-//   return { success: true };
-// }
-
 export function updatePassword(newPassword) {
   if (!newPassword || newPassword.trim() === '') {
     return { success: false, reason: 'empty_password' };

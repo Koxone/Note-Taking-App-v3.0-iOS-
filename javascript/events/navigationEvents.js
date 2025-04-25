@@ -51,13 +51,11 @@ export function loadInitialState() {
       mainHeader.style.display = 'flex';
       footer.style.display = 'flex';
       titleText.style.display = 'flex';
-      document.querySelector('.generalContainer').style.justifyContent = 'flexStart';
       document.querySelector('.mainContainer').style.backgroundColor = '#232530'; //Neutral 800
     } else {
       resetPasswordContainer.style.display = 'none'; //none
       resetPasswordContainer.style.flexDirection = 'column';
       forgotPasswordContainer.style.display = 'none'; //none
-      document.querySelector('.generalContainer').style.justifyContent = 'center';
       titleTextForgot.style.display = 'flex'; //flex
       titleContainerForgot.style.display = 'flex'; //flex
       titleContainerForgot.style.flexDirection = 'column'; //column
@@ -307,12 +305,6 @@ export function showMainFooterMenuScreens() {
     );
     const elementsToShowHome = document.querySelectorAll('#allNotesContainer, #titleContainer, #titleText, #newNoteButton');
 
-    const homeButton = document.getElementById('homeButton');
-    const searchButton = document.getElementById('searchButton');
-    const archivedButton = document.getElementById('archivedButton');
-    const tagsButton = document.getElementById('tagsButton');
-    const settingsButton = document.getElementById('settingsButton');
-
     if (!clickedButton) return;
 
     const buttonId = clickedButton.id;
@@ -329,6 +321,7 @@ export function showMainFooterMenuScreens() {
         });
 
         titleText.textContent = 'Search';
+        document.getElementById('generalContainer').style.justifyContent = 'flex-start';
         searchNotes();
         break;
 
@@ -341,6 +334,7 @@ export function showMainFooterMenuScreens() {
         });
         titleText.textContent = 'All Notes';
         resetPasswordContainer.style.display = 'none';
+        document.getElementById('generalContainer').style.justifyContent = 'flex-start';
         break;
 
       case 'tagsButton':
@@ -352,6 +346,7 @@ export function showMainFooterMenuScreens() {
         });
         titleText.textContent = 'Tags';
         resetPasswordContainer.style.display = 'none';
+        document.getElementById('generalContainer').style.justifyContent = 'flex-start';
         break;
 
       case 'goBackToTags':
@@ -363,6 +358,7 @@ export function showMainFooterMenuScreens() {
         });
         titleText.textContent = 'Tags';
         resetPasswordContainer.style.display = 'none';
+        document.getElementById('generalContainer').style.justifyContent = 'flex-start';
         break;
 
       case 'archivedButton':
@@ -374,6 +370,7 @@ export function showMainFooterMenuScreens() {
         });
         titleText.textContent = 'Archived Notes';
         resetPasswordContainer.style.display = 'none';
+        document.getElementById('generalContainer').style.justifyContent = 'flex-start';
         break;
 
       case 'settingsButton':
@@ -383,7 +380,7 @@ export function showMainFooterMenuScreens() {
         elementsToShowSettings.style.display = 'flex';
         resetPasswordContainer.style.display = 'none';
         elementsToShowSettings.style.flexDirection = 'column';
-        document.querySelector('.generalContainer').style.justifyContent = 'flex-start';
+        document.getElementById('generalContainer').style.justifyContent = 'flex-start';
     }
   });
 }
@@ -397,6 +394,7 @@ export function settingsLogOutButton() {
     '#allNotesContainer, footer, .mainHeader, #tagsListContainer, #allArchivedNotesContainer, #openNotesContainer, #newNoteContainer, #settingsContainer, #modal'
   );
   const elementsToShowLogOut = document.getElementById('loginContainer');
+  
   logoutButton.addEventListener('click', () => {
     elementsToHideLogOut.forEach((element) => {
       element.style.display = 'none';
@@ -405,23 +403,23 @@ export function settingsLogOutButton() {
     elementsToShowLogOut.style.flexDirection = 'column';
     wrongMail.style.display = 'none';
     wrongPassword.style.display = 'none';
+
+    document.getElementById('generalContainer').style.justifyContent = 'center';
+
     setCurrentUser();
     loginHandler();
     registerLoginEvents();
-    document.querySelector('.generalContainer').style.justifyContent = 'center';
 
     if (currentColorTheme === 'darkMode') {
-      document.querySelector('.backgroundM').style.backgroundColor = 'red'; //normal
+      document.querySelector('.mainContainer').style.backgroundColor = '#2a3038';
     } else if (currentColorTheme === 'lightMode') {
-      document.querySelector('.backgroundM').style.backgroundColor = 'blue';
+      document.querySelector('.mainContainer').style.backgroundColor = '#ffffff';
     }
   });
 }
-settingsLogOutButton();
 
 export function showMainAppView() {
   document.getElementById('titleText').textContent = 'All Notes';
-  console.log('KOXONE WORKS')
   document.getElementById('loginContainer').style.display = 'none';
   document.getElementById('signUpContainer').style.display = 'none';
   document.getElementById('allArchivedNotesContainer').style.display = 'none';
