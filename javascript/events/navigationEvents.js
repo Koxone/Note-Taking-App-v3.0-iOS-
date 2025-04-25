@@ -404,7 +404,15 @@ export function settingsLogOutButton() {
     wrongMail.style.display = 'none';
     wrongPassword.style.display = 'none';
 
-    document.getElementById('generalContainer').style.justifyContent = 'center';
+    if (window.matchMedia('(min-width: 1024px').matches) {
+      console.log('KOXONE WORKS')
+      document.getElementById('generalContainer').style.justifyContent = 'unset';
+    } else {
+      console.log('NOT WORKS')
+      document.getElementById('generalContainer').style.justifyContent = 'center';
+    }
+
+    
 
     setCurrentUser();
     loginHandler();

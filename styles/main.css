@@ -29,22 +29,22 @@
 
 :root {
   /* Inter font family */
-  --font-inter-regular: "Inter-Regular";
-  --font-inter-medium: "Inter-Medium";
-  --font-inter-semibold: "Inter-SemiBold";
-  --font-inter-bold: "Inter-Bold";
+  --font-inter-regular: 'Inter-Regular';
+  --font-inter-medium: 'Inter-Medium';
+  --font-inter-semibold: 'Inter-SemiBold';
+  --font-inter-bold: 'Inter-Bold';
 
   /* Noto Serif font family */
-  --font-notoserif-regular: "NotoSerif-Regular";
-  --font-notoserif-medium: "NotoSerif-Medium";
-  --font-notoserif-semibold: "NotoSerif-SemiBold";
-  --font-notoserif-bold: "NotoSerif-Bold";
+  --font-notoserif-regular: 'NotoSerif-Regular';
+  --font-notoserif-medium: 'NotoSerif-Medium';
+  --font-notoserif-semibold: 'NotoSerif-SemiBold';
+  --font-notoserif-bold: 'NotoSerif-Bold';
 
   /* Source Code Pro font family */
-  --font-sourcecodepro-regular: "SourceCodePro-Regular";
-  --font-sourcecodepro-medium: "SourceCodePro-Medium";
-  --font-sourcecodepro-semibold: "SourceCodePro-SemiBold";
-  --font-sourcecodepro-bold: "SourceCodePro-Bold";
+  --font-sourcecodepro-regular: 'SourceCodePro-Regular';
+  --font-sourcecodepro-medium: 'SourceCodePro-Medium';
+  --font-sourcecodepro-semibold: 'SourceCodePro-SemiBold';
+  --font-sourcecodepro-bold: 'SourceCodePro-Bold';
 }
 
 * {
@@ -57,11 +57,11 @@ body,
 html {
   background-color: var(--neutral-800);
   overflow: hidden;
-  font-family: "Inter";
+  font-family: 'Inter';
   color: white;
   height: 100%;
   width: 100%;
-  position: 100vh;/*fixed*/
+  position: 100vh; /*fixed*/
 }
 
 button {
@@ -78,29 +78,29 @@ textarea {
   height: 100%;
 }
 
-.allNotesContainer, 
-.newNoteContainer, 
-.openNotesContainer, 
-.allArchivedNotesContainer, 
-.archivedNotesSubtitle, 
-.settingsContainer, 
-.loginContainer, 
-.toastContainer, 
-.signUpContainer, 
-.resetPasswordContainer, 
+.allNotesContainer,
+.newNoteContainer,
+.openNotesContainer,
+.allArchivedNotesContainer,
+.archivedNotesSubtitle,
+.settingsContainer,
+.loginContainer,
+.toastContainer,
+.signUpContainer,
+.resetPasswordContainer,
 .forgotPasswordContainer {
   display: none;
 }
 
 .titleContainer {
   display: none;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .searchEngineContainer {
   display: none;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 #searchLabel {
@@ -111,23 +111,23 @@ textarea {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 16px;
+  left: 1rem;
 }
 
 .searchEngine {
   width: 100%;
-  border-radius: 8px;
-  border: 2px solid var(--neutral-600);
+  border-radius: 0.5rem;
+  border: 0.125rem solid var(--neutral-600);
   background: none;
-  padding: 16px 12px 16px 50px;
-  
+  padding: 1rem 0.75rem 1rem 3.125rem;
+
   color: white;
 }
 
 .subtitleSearch {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 130%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   font-weight: 300;
 }
 
@@ -136,7 +136,7 @@ textarea {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
   overflow: hidden;
 }
@@ -149,27 +149,27 @@ textarea {
   width: 100%;
   flex: 1;
   overflow: hidden;
-  padding: 16px 16px 0 16px;
+  padding: 1rem 1rem 0 1rem;
   background-color: var(--neutral-950);
-  border-radius: 24px 24px 0 0;
+  border-radius: 1.5rem 1.5rem 0 0;
 }
 
 footer {
   display: flex;
-  padding: 12px 0px 32px 12px;
+  padding: 0.75rem 0rem 2rem 0.75rem;
   justify-content: space-between;
   background-color: var(--neutral-950);
   width: 100%;
   position: sticky;
   bottom: 0;
-  box-shadow: 0px -4px 10px -2px rgba(42, 42, 43, 0.9);
+  box-shadow: 0rem -0.25rem 0.625rem -0.125rem rgba(42, 42, 43, 0.9);
   z-index: 10;
 }
 
 .logoContainer,
 .headerContainer {
   display: flex;
-  gap: 10px;
+  gap: 0.625rem;
 }
 
 header {
@@ -177,22 +177,22 @@ header {
   width: 100%;
   justify-content: left;
   align-items: center;
-  padding: 13px 16px;
+  padding: 0.8125rem 1rem;
   background-color: var(--neutral-800);
 }
 
 .logoText {
   line-height: 1;
-  font-size: 23px;
+  font-size: 1.4375rem;
   font-family: Pacifico;
 }
 
-.footerButton, 
+.footerButton,
 .settingsFooterButton {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 19.1008px;
+  padding: 0.25rem 1.1938rem;
   background-color: none;
   background: none;
   border: none;
@@ -202,37 +202,37 @@ header {
 .footerButton:hover,
 .settingsFooterButton:hover {
   background: var(--neutral-700);
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
-.footerButton.lightMode:hover, 
+.footerButton.lightMode:hover,
 .settingsFooterButton.lightMode:hover {
   background: var(--neutral-500);
-  border-radius: 4px;
+  border-radius: 0.25rem;
 }
 
 .spacer {
   display: block;
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
   background: var(--neutral-800);
 }
 
 .titleText,
 .openSettingTitle {
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 120%;
-  letter-spacing: -0.5008px;
+  letter-spacing: -0.0313rem;
 }
 
 .allNotesContainer,
 .allArchivedNotesContainer {
   flex-direction: column;
-  height: calc(100% - 24px); 
-  padding: 8px 8px 0 8px;
-  margin-top: 24px;
+  height: calc(100% - 1.5rem);
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin-top: 1.5rem;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch; 
+  -webkit-overflow-scrolling: touch;
 }
 
 article {
@@ -242,9 +242,9 @@ article {
   align-items: flex-start;
   width: 100%;
   height: auto;
-  margin-bottom: 4.5008px;
-  gap: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  margin-bottom: 0.2813rem;
+  gap: 0.75rem;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.04);
   cursor: pointer;
 }
 
@@ -255,14 +255,14 @@ article {
   align-items: center;
   bottom: 12%;
   right: 6%;
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   background-color: var(--blue-500);
   border: none;
   cursor: pointer;
   z-index: 5;
-  box-shadow: -6px 0px 6px -3px rgba(42, 42, 43, 0.9);
+  box-shadow: -0.375rem 0rem 0.375rem -0.1875rem rgba(42, 42, 43, 0.9);
 }
 
 .mainNewNoteButton:hover {
@@ -271,7 +271,7 @@ article {
 
 .noteTags {
   display: flex;
-  gap: 4px;
+  gap: 0.25rem;
 }
 
 li {
@@ -279,28 +279,28 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 4px;
+  border-radius: 0.25rem;
   background-color: var(--neutral-600);
-  padding: 2px 6px;
-  font-size: 12px;
+  padding: 0.125rem 0.375rem;
+  font-size: 0.75rem;
   font-weight: 300;
   line-height: 120%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
 }
 
 h2 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 120%;
-  letter-spacing: -0.2992px;
+  letter-spacing: -0.0187rem;
 }
 
 time {
   font-weight: 200;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 120%;
-  letter-spacing: -0.2px;
-  margin-bottom: 12px;
+  letter-spacing: -0.0125rem;
+  margin-bottom: 0.75rem;
 }
 
 /*---------------------------------------------------------------------------------Note Detail Screen--------------------------------------------------------------*/
@@ -318,8 +318,8 @@ time {
   display: flex;
   align-items: center;
   background-color: unset;
-  padding: 0 0 12px 0;
-  margin-top: 16px;
+  padding: 0 0 0.75rem 0;
+  margin-top: 1rem;
 }
 
 .newNoteHeader .backButton {
@@ -327,22 +327,22 @@ time {
 }
 
 .cancelButton {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 .newNoteHeader {
   background-color: unset;
-  padding: 0px 16px 13px 0;
+  padding: 0rem 1rem 0.8125rem 0;
 }
 
 .backButton {
-  margin-right: 71px;
+  margin-right: 4.4375rem;
 }
 
-.deleteButton, 
-.archiveButton, 
+.deleteButton,
+.archiveButton,
 .restore {
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 .backButton,
@@ -351,16 +351,16 @@ time {
 .saveButton,
 .archiveButton,
 .restore,
-.backToSettingsButton, 
+.backToSettingsButton,
 .goBackToTags {
   display: flex;
   align-items: center;
   background: none;
   border: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 200;
   line-height: 130%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   cursor: pointer;
 }
 
@@ -375,29 +375,29 @@ time {
 }
 
 .openNoteTitleContainer {
-  margin-top: 12px;
+  margin-top: 0.75rem;
 }
 
 .openNote {
   display: flex;
   flex-direction: column;
   height: 100%;
-  gap: 12px;
+  gap: 0.75rem;
   overflow: hidden;
 }
 
 .openNoteTitle,
 .openSettingTitle {
   /*H2*/
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  letter-spacing: -0.5008px;
+  letter-spacing: -0.0313rem;
 }
 
 .openNoteTagsAndDateContainer {
   display: flex;
   flex-direction: column;
-  gap: 15.5008px;
+  gap: 0.9688rem;
 }
 
 .openNoteTagsContainer,
@@ -418,20 +418,20 @@ time {
 .statusContainer span,
 .statusContainer div {
   display: flex;
-  gap: 6px;
+  gap: 0.375rem;
   font-weight: 200;
 }
 
 .openNoteTagsContainer {
-  gap: 96px;
+  gap: 6rem;
 }
 
 .statusContainer {
-  gap: 86px;
+  gap: 5.375rem;
 }
 
 .openNoteDateContainer {
-  gap: 49px;
+  gap: 3.0625rem;
 }
 
 .openNoteTextAreaContainer,
@@ -447,13 +447,13 @@ time {
   /*Use Javascript to make it work*/
   width: 100%;
   height: 100%;
-  min-height: 300px;
-  padding: 0px;
+  min-height: 18.75rem;
+  padding: 0rem;
   box-sizing: border-box;
   border: none;
   outline: none;
   resize: none;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1;
   background-color: transparent;
   text-align: left;
@@ -494,13 +494,13 @@ textarea::-webkit-scrollbar {
 
 .newNoteTagsTextContainer input {
   all: unset;
-  padding: 0px 0px 20px 0px;
+  padding: 0rem 0rem 1.25rem 0rem;
 }
 
 .newNoteTagsTextContainer .newTagsInput::placeholder {
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 130%;
-  letter-spacing: -0.5008px;
+  letter-spacing: -0.0313rem;
   font-weight: 300;
   white-space: pre-line;
   text-align: top;
@@ -509,29 +509,29 @@ textarea::-webkit-scrollbar {
 .newNoteTitlecontainer,
 .backToSettingsButton {
   height: auto;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .backToSettingsButton {
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .newNoteTitlecontainer .newTitleInput {
-  height: 29px;
-  font-size: 24px;
+  height: 1.8125rem;
+  font-size: 1.5rem;
 }
 
 .newNoteTitlecontainer .newTitleInput::placeholder {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 .newNoteDetailsContainer {
-  margin: 12px 0 12px 0;
+  margin: 0.75rem 0 0.75rem 0;
 }
 
 .newNoteTextContentContainer {
-  margin-top: 12px;
+  margin-top: 0.75rem;
   flex: 1;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -544,10 +544,10 @@ ul {
 }
 
 .settingsSpacer {
-  margin: 17.5008px 0 17.5008px 0;
+  margin: 1.0938rem 0 1.0938rem 0;
   display: block;
   width: 100%;
-  height: 1px;
+  height: 0.0625rem;
   background: var(--neutral-800);
 }
 
@@ -557,27 +557,27 @@ ul {
   background-color: unset;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   width: 100%;
 }
 
 li.lightMode:hover {
-  border: 2px solid var(--neutral-500);
+  border: 0.125rem solid var(--neutral-500);
 }
 
 .settingsButton {
   all: unset;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 0.5rem;
   cursor: pointer;
   font-weight: 400;
   width: 100%;
 }
 
 .settingsButton:hover {
-  border: 2px solid var(--neutral-700);
-  border-radius: 8px;
+  border: 0.125rem solid var(--neutral-700);
+  border-radius: 0.5rem;
 }
 
 .settingsButton.lightMode:hover {
@@ -585,13 +585,13 @@ li.lightMode:hover {
 }
 
 .settingsOptionText {
-  margin-right: 100px;
+  margin-right: 6.25rem;
   width: 100%;
 }
 
 .stitleContainer {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 
 .settingsMenu {
@@ -613,33 +613,33 @@ li.lightMode:hover {
 .openSettingHeader {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .openSettingSubtitle {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 130%;
-  letter-spacing: -0.2px;
-  margin-bottom: 24px;
+  letter-spacing: -0.0125rem;
+  margin-bottom: 1.5rem;
 }
 
 .optionsContainer,
 .labelsContainer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .option {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
   line-height: 120%;
-  letter-spacing: -0.2px;
-  padding: 16px;
-  border-radius: 12px;
-  border: 2px solid var(--neutral-800);
+  letter-spacing: -0.0125rem;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  border: 0.125rem solid var(--neutral-800);
   cursor: pointer;
 }
 
@@ -655,21 +655,21 @@ li.lightMode:hover {
 }
 
 .top {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
 }
 
 .bottom {
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 400;
 }
 
 .imgContainer {
   display: flex;
   background-color: var(--neutral-950);
-  padding: 8px;
-  border-radius: 12px;
-  border: 2px solid var(--neutral-800);
+  padding: 0.5rem;
+  border-radius: 0.75rem;
+  border: 0.125rem solid var(--neutral-800);
 }
 
 .optionsMainButton {
@@ -677,14 +677,14 @@ li.lightMode:hover {
   justify-content: center;
   align-items: center;
   align-self: flex-end;
-  width: 132px;
-  height: 41px;
-  font-size: 14px;
+  width: 8.25rem;
+  height: 2.5625rem;
+  font-size: 0.875rem;
   line-height: 120%;
   font-weight: 500;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
   background-color: var(--blue-700);
 }
@@ -707,11 +707,11 @@ li.lightMode:hover {
 }
 
 .archivedNotesSubtitle {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 130%;
-  letter-spacing: -0.2px;
-  margin-top: 16px;
+  letter-spacing: -0.0125rem;
+  margin-top: 1rem;
 }
 
 /*-------------------------------------------------------------------------------Light Mode--------------------------------------------------------------*/
@@ -761,44 +761,44 @@ li.lightMode {
   display: none;
   flex-direction: column;
   align-items: center;
-  width: 343px;
-  height: 193px;
-  border-radius: 12px;
+  width: 21.4375rem;
+  height: 12.0625rem;
+  border-radius: 0.75rem;
   background-color: var(--neutral-700);
 }
 
 .modalTopContainer {
   display: flex;
-  gap: 16px;
-  padding: 20px;
+  gap: 1rem;
+  padding: 1.25rem;
 }
 
 .modalTextContainer {
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  width: 247px;
+  gap: 0.375rem;
+  width: 15.4375rem;
 }
 
 .modalTextTop {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 120%;
-  letter-spacing: -0.2992px;
+  letter-spacing: -0.0187rem;
 }
 
 .modalTextBottom {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 300;
   line-height: 130%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
 }
 
 .modalImgContainer {
   display: flex;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
   background-color: var(--neutral-600);
 }
 
@@ -806,24 +806,24 @@ li.lightMode {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 1.25rem;
   justify-content: right;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .modalCancelButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 78px;
-  height: 41px;
-  border-radius: 8px;
+  width: 4.875rem;
+  height: 2.5625rem;
+  border-radius: 0.5rem;
   background-color: var(--neutral-500);
   border: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   cursor: pointer;
 }
 
@@ -835,32 +835,32 @@ li.lightMode {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 110px;
-  height: 41px;
-  border-radius: 8px;
+  width: 6.875rem;
+  height: 2.5625rem;
+  border-radius: 0.5rem;
   background-color: var(--red-500);
   border: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   cursor: pointer;
 }
 
-.modalArchiveButton, 
+.modalArchiveButton,
 .modalRestoreButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 117px;
-  height: 41px;
-  border-radius: 8px;
+  width: 7.3125rem;
+  height: 2.5625rem;
+  border-radius: 0.5rem;
   background-color: var(--blue-500);
   border: none;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   line-height: 120%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   cursor: pointer;
 }
 
@@ -887,24 +887,24 @@ li.lightMode {
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  margin-top: 16px;
+  margin-top: 1rem;
 }
 
 .tagElement {
   display: flex;
   align-items: center;
   justify-content: left;
-  gap: 8px;
-  padding: 14px;
+  gap: 0.5rem;
+  padding: 0.875rem;
   border: none;
-  border-bottom: 1px solid var(--neutral-800);
-  border-radius: 0px;
+  border-bottom: 0.0625rem solid var(--neutral-800);
+  border-radius: 0rem;
   background: none;
   cursor: pointer;
 }
 
 .tagElement:hover {
-  box-shadow: -6px 0px 6px -3px rgba(42, 42, 43, 0.9);
+  box-shadow: -0.375rem 0rem 0.375rem -0.1875rem rgba(42, 42, 43, 0.9);
   color: #335cff;
 }
 /*-------------------------------------------------------------------------------Tag List--------------------------------------------------------------*/
@@ -913,11 +913,11 @@ li.lightMode {
   display: flex;
   align-items: center;
   background-color: var(--neutral-700);
-  padding: 8px;
-  border-radius: 8px;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
   position: absolute;
-  bottom: 25px;
-  right: 25px;
+  bottom: 1.5625rem;
+  right: 1.5625rem;
   transition: all 0.3s ease;
   pointer-events: none;
   opacity: 0;
@@ -934,7 +934,7 @@ li.lightMode {
     box-shadow: 0 0 0 rgba(0, 123, 255, 0);
   }
   50% {
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.7), 0 0 20px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 0.625rem rgba(0, 123, 255, 0.7), 0 0 1.25rem rgba(0, 123, 255, 0.5);
   }
   100% {
     box-shadow: 0 0 0 rgba(0, 123, 255, 0);
@@ -942,11 +942,11 @@ li.lightMode {
 }
 
 .toastContainer .src {
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 .toastContainer p.color {
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 #toastX {
@@ -966,65 +966,65 @@ li.lightMode {
 
 /*LOGIN*/
 
-.loginContainer, 
-.signUpContainer  {
+.loginContainer,
+.signUpContainer {
   display: flex;
   flex-direction: column;
   width: auto;
   height: auto;
   align-items: center;
-  border-radius: 16px;
-  padding: 48px 16px;
+  border-radius: 1rem;
+  padding: 3rem 1rem;
   background-color: var(--neutral-950);
 }
 
-.logoContainerLogin, 
+.logoContainerLogin,
 .logoContainerSignUp {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 10px;
-  height: 36px;
-  margin-bottom: 16px;
+  gap: 0.625rem;
+  height: 2.25rem;
+  margin-bottom: 1rem;
 }
 
-.titleTextLogin, 
+.titleTextLogin,
 .titleTextSignUp {
   display: inline;
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: 'Inter';
   font-weight: 700;
   line-height: 120%;
-  letter-spacing: -0.5008px;
+  letter-spacing: -0.0313rem;
 }
 
-.titleContainerLogin, 
+.titleContainerLogin,
 .titleContainerSignUp {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
 .formContainer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 form {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .inputWrapper {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 0.375rem;
   position: relative;
 }
 
@@ -1032,22 +1032,22 @@ form {
   color: white;
   font-family: 'Inter';
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 120%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
 }
 
 .inputWrapper input {
   all: unset;
-  border-radius: 8px;
-  padding: 12px 16px;
-  border: 1px solid var(--neutral-600);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: 0.0625rem solid var(--neutral-600);
   color: white;
   font-family: 'Inter';
 }
 
 .inputWrapper input.error {
-  outline: 2px solid red;
+  outline: 0.125rem solid red;
 }
 
 .errorEmptyEmail {
@@ -1057,7 +1057,7 @@ form {
   right: 0%;
   color: red;
   font-family: 'Inter';
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .errorEmptyPassword {
@@ -1067,7 +1067,7 @@ form {
   right: 0%;
   color: red;
   font-family: 'Inter';
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 #errorEmptyEmailL {
@@ -1077,53 +1077,53 @@ form {
   right: 0%;
   color: red;
   font-family: 'Inter';
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
-#errorEmptyPasswordL, 
-#errorEmptyRepeatNewPassword, 
+#errorEmptyPasswordL,
+#errorEmptyRepeatNewPassword,
 #errorEmptyNewPassword {
   display: none;
   bottom: -25%;
   right: 0%;
   color: red;
   font-family: 'Inter';
-  font-size: 12px;
-  margin-bottom: -2px;
+  font-size: 0.75rem;
+  margin-bottom: -0.125rem;
 }
 
 #errorEmptyRepeatNewPassword {
-  bottom: 6px;
+  bottom: 0.375rem;
 }
 
 .wrongMailOrPassword {
   display: none;
   color: red;
   font-family: 'Inter';
-  font-size: 12px;
-  margin-bottom: -2px;
+  font-size: 0.75rem;
+  margin-bottom: -0.125rem;
 }
 
 .emailExistsErrorMessage {
   display: none;
   color: red;
   font-family: 'Inter';
-  font-size: 12px;
-  margin-bottom: -2px;
+  font-size: 0.75rem;
+  margin-bottom: -0.125rem;
 }
 
 .inputWrapper input::placeholder {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   font-family: 'Inter';
   line-height: 130%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
 }
 
 .inputWrapper img {
   position: absolute;
-  top: 33px;
-  right: 12px;
+  top: 2.0625rem;
+  right: 0.75rem;
   cursor: pointer;
 }
 
@@ -1135,7 +1135,7 @@ form {
 
 .forgotPassword {
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: 'Inter';
   line-height: 140%;
   color: var(--neutral-400);
@@ -1152,18 +1152,18 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
-  font-size: 16px;
+  border-radius: 0.5rem;
+  font-size: 1rem;
   font-weight: 600;
   color: white;
   line-height: 120%;
-  letter-spacing: -0.2992px;
-  padding: 12.5008px 127px;
+  letter-spacing: -0.0187rem;
+  padding: 0.7813rem 7.9375rem;
   background-color: var(--blue-500);
   border: none;
   cursor: pointer;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Inter';
 }
 
@@ -1182,8 +1182,8 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 24px 0 0 0;
-  gap: 16px;
+  padding: 1.5rem 0 0 0;
+  gap: 1rem;
 }
 
 .toolTipContainer {
@@ -1193,29 +1193,29 @@ form {
   align-items: center;
   top: 20%;
   left: 0%;
-  font-size: 10px;
-  border-radius: 8px;
-  padding: 5px;
+  font-size: 0.625rem;
+  border-radius: 0.5rem;
+  padding: 0.3125rem;
   background-color: var(--red-500);
-  border: 1px solid white;
+  border: 0.0625rem solid white;
 }
 
 .socialButton:disabled {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 113.5008px;
-  border-radius: 12px;
+  padding: 0.75rem 7.0938rem;
+  border-radius: 0.75rem;
   background-color: none;
   background: none;
-  border: 1px solid var(--neutral-600);
+  border: 0.0625rem solid var(--neutral-600);
   color: white;
   font-family: 'Inter';
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 120%;
-  letter-spacing: -0.2992px;
-  gap: 10px;
+  letter-spacing: -0.0187rem;
+  gap: 0.625rem;
   cursor: not-allowed;
 }
 
@@ -1231,8 +1231,8 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  margin-top: 16px;
+  gap: 0.3125rem;
+  margin-top: 1rem;
 }
 
 .goToText {
@@ -1258,11 +1258,11 @@ form {
 
 .subtitleText {
   color: white;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-family: 'Inter';
   font-weight: 200;
   line-height: 130%;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.0125rem;
   text-align: center;
   display: inline;
 }
@@ -1275,11 +1275,11 @@ form {
   position: absolute;
   top: 5%;
   left: 0%;
-  width: 16px;
+  width: 1rem;
 }
 
 .minimumWrapper .smText {
-  margin-left: 24px;
+  margin-left: 1.5rem;
 }
 
 /*FORGOT*/
@@ -1288,24 +1288,25 @@ form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 48px 16px;
-  border-radius: 12px;
+  padding: 3rem 1rem;
+  border-radius: 0.75rem;
 }
 
 .forgotForm {
   width: 100%;
 }
 
-#backToLogin, #recoverButton {
+#backToLogin,
+#recoverButton {
   width: 100%;
   height: auto;
-  padding: 12.5px 95.5px;
+  padding: 0.7813rem 5.9688rem;
 }
 
-#titleContainerForgot, 
+#titleContainerForgot,
 #titleContainerReset {
-  margin-top: 16px;
-  margin-bottom: 40px;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
 }
 
 /*RESET*/
@@ -1313,8 +1314,8 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 48px 16px;
-  border-radius: 12px;
+  padding: 3rem 1rem;
+  border-radius: 0.75rem;
 }
 
 #titleContainerReset {
@@ -1328,12 +1329,119 @@ form {
 #resetButtonReset {
   white-space: nowrap;
   text-align: center;
-  margin-top: 16px;
-  padding: 12.5px 95.5px;
+  margin-top: 1rem;
+  padding: 0.7813rem 5.9688rem;
 }
 
 #backToSettingsButtonForgot {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  top: 1.5625rem;
+  left: 1.5625rem;
+}
+
+/*----------------------------------------------------------------------------Desktop-----------------------------------------------------*/
+@media (min-width: 64rem) {
+  .noteCard {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 0.625rem;
+    border-radius: 0.5rem;
+  }
+
+  .tagElement {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 1rem;
+  }
+
+  .tagsListContainer {
+    padding: 0 0.625rem 0 0.625rem;
+  }
+
+  .settingsButton {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 0.5rem;
+    padding: 0.625rem;
+  }
+
+  .settingsButton:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+    background-color: var(--neutral-600);
+  }
+
+  .tagElement:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+    background-color: var(--neutral-600);
+    color: white;
+  }
+
+  .footerButton {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 0.625rem 4.0625rem;
+  }
+
+  .verticalSpacer {
+    display: flex;
+    width: 0.0625rem;
+    background-color: var(--neutral-600);
+  }
+
+  .footerButton:first-child {
+    border-left: none;
+  }
+
+  .footerButton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  }
+
+  footer {
+    padding: 0.75rem 1.5625rem;
+    justify-content: space-evenly;
+  }
+
+  #loginContainer,
+  #signUpContainer,
+  #forgotPasswordContainer,
+  #resetPasswordContainer {
+    width: 33.75rem;
+    height: 38.625rem;
+    max-height: 38.625rem;
+    border-radius: 1.5rem;
+    padding: 5.625rem;
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    border: 0.0625rem solid white;
+    justify-content: center;
+  }
+
+  .noteCard:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+    background-color: var(--neutral-600);
+  }
+
+  .option {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .optionsMainButton {
+    margin-right: 1%;
+  }
+
+  .option:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.2);
+  }
+
+  .optionsContainer {
+    align-items: center;
+  }
+
+  .labelsContainer {
+    width: 99%;
+  }
 }
