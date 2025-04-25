@@ -156,7 +156,7 @@ textarea {
 
 footer {
   display: flex;
-  padding: 12px 32px;
+  padding: 20px 32px;
   justify-content: space-between;
   background-color: var(--neutral-950);
   width: 100%;
